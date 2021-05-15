@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{bde40976-a4ee-4020-8c6a-f1885185ac51}">
+		<property name="assetPath">
+			<value>Cord Shell(222).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.4249433106575964</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f59fe89-5ef7-465b-8548-fe0e97a62ba4}</destination>
+		</relationship>
+	</object>
+</objects>

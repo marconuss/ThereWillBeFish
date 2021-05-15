@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{536849d8-65b5-4b39-ae00-51a2cea30ae1}">
+		<property name="name">
+			<value>PitchToHeight</value>
+		</property>
+		<relationship name="folder">
+			<destination>{876e832d-de2b-4ac1-9f5a-6887203c61b8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0f0520e4-8e73-49d8-8a64-721a8cf88c87}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0f0520e4-8e73-49d8-8a64-721a8cf88c87}">
+		<property name="minimum">
+			<value>-10</value>
+		</property>
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

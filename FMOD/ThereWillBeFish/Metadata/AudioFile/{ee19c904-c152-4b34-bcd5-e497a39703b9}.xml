@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ee19c904-c152-4b34-bcd5-e497a39703b9}">
+		<property name="assetPath">
+			<value>Cmaj7-Shell.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7124716553287982</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9f59fe89-5ef7-465b-8548-fe0e97a62ba4}</destination>
+		</relationship>
+	</object>
+</objects>

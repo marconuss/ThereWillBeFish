@@ -394,7 +394,7 @@ MonoBehaviour:
   HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: FMOD/ThereWillBeFish/ThereWillBeFish.fspro
-  sourceBankPath: FMOD/ThereWillBeFish/Build
+  sourceBankPath: FMOD\ThereWillBeFish\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
