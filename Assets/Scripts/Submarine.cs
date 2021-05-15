@@ -6,6 +6,8 @@ using UnityEngine;
 public class Submarine : Singleton<Submarine>
 {
     [SerializeField]
+    private bool enableSpeedControl = false;
+    [SerializeField]
     private float minHorizontalSpeed = .5f;
     [SerializeField]
     private float maxHorizontalSpeed = 2f;
@@ -14,16 +16,20 @@ public class Submarine : Singleton<Submarine>
     [SerializeField]
     private float maxVerticalMoveSpeed = 3f;
 
-    public Vector2 velocity = new Vector2(1f, 0f);
+    private Vector2 velocity = new Vector2(1f, 0f);
     public Vector2 Velocity
     {
         get => velocity;
         private set
         {
-            float HorizontalVelocity = Mathf.Clamp(value.x, minHorizontalSpeed, maxHorizontalSpeed);
-            float VerticalVelocity = Mathf.Clamp(value.y, -maxVerticalMoveSpeed, maxVerticalMoveSpeed);
-            rb2D.velocity = new Vector2(rb2D.velocity.x, VerticalVelocity);
-            velocity = new Vector2(HorizontalVelocity, VerticalVelocity);
+            float horizontalVelocity = velocity.x;
+            if (enableSpeedControl)
+            {
+                horizontalVelocity = Mathf.Clamp(value.x, minHorizontalSpeed, maxHorizontalSpeed);
+            }
+            float verticalVelocity = Mathf.Clamp(value.y, -maxVerticalMoveSpeed, maxVerticalMoveSpeed);
+            rb2D.velocity = new Vector2(rb2D.velocity.x, verticalVelocity);
+            velocity = new Vector2(horizontalVelocity, verticalVelocity);
         }
     }
     private Rigidbody2D rb2D;

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{81501d29-a3fc-4168-86db-33e23557068c}">
+		<property name="name">
+			<value>FishHitHeight</value>
+		</property>
+		<relationship name="folder">
+			<destination>{876e832d-de2b-4ac1-9f5a-6887203c61b8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b8486994-303c-4ebb-852f-62ea6020163b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b8486994-303c-4ebb-852f-62ea6020163b}">
+		<property name="minimum">
+			<value>-5</value>
+		</property>
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="isHeld">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

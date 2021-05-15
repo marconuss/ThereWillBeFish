@@ -124,3 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubbles: {fileID: 7369184984879232659, guid: 6288b1f590bae93438f5fef16f063c47, type: 3}
   speed: 1
+  hitFishEvent: event:/Fishes/FishHit
