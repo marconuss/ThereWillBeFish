@@ -475,11 +475,11 @@ MonoBehaviour:
   Path: FMOD/ThereWillBeFish/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637568040034529131
+  lastModified: 637568115896385238
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1210
+    Value: 1120
   Exists: 1
 --- !u!114 &-5145771665913660110
 MonoBehaviour:
@@ -901,6 +901,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-1481567014055450627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Submarine Engine/PitchToVelocity
+  m_EditorClassIdentifier: 
+  Name: PitchToVelocity
+  Min: 0.5
+  Max: 2
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-1256541691720207132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +1001,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-337075212795063263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FishHit/FishHitHeight
+  m_EditorClassIdentifier: 
+  Name: FishHitHeight
+  Min: -5
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-279443995569370954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +1098,6 @@ MonoBehaviour:
   - {fileID: 946107420075838087}
   EditorEvents:
   - {fileID: 205332121657048792}
-  - {fileID: 8353810460434082825}
   - {fileID: 719983930569340291}
   - {fileID: 2196544289006059503}
   EditorParameters:
@@ -1067,7 +1106,7 @@ MonoBehaviour:
   - {fileID: 946107420075838087}
   StringsBanks:
   - {fileID: -5198286823036247949}
-  stringsBankWriteTime: 637568040034529131
+  stringsBankWriteTime: 637568115896385238
   cacheVersion: 6
 --- !u!114 &37508064009910616
 MonoBehaviour:
@@ -1149,8 +1188,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 4637780414288770209}
-  - {fileID: 8942392328280494957}
+  - {fileID: -1481567014055450627}
+  - {fileID: 8958017328196623558}
   MinDistance: 0
   MaxDistance: 0
   Length: 3424
@@ -1234,7 +1273,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -8992375135274435435}
+  - {fileID: -337075212795063263}
   MinDistance: 0
   MaxDistance: 0
   Length: 1712
@@ -1293,7 +1332,7 @@ MonoBehaviour:
   Path: FMOD/ThereWillBeFish/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637568040034419122
+  lastModified: 637568115896275153
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1480,8 +1519,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -1256541691720207132}
-  - {fileID: 2707286702295103558}
+  - {fileID: 9135834226317136806}
+  - {fileID: 3543861035803197012}
   MinDistance: 0
   MaxDistance: 0
   Length: 1712
@@ -1645,6 +1684,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &3543861035803197012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SubEngine/EngineToVelocity
+  m_EditorClassIdentifier: 
+  Name: EngineToVelocity
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3841342159354314749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2233,6 +2292,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &8958017328196623558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Submarine Engine/PitchToHeight
+  m_EditorClassIdentifier: 
+  Name: PitchToHeight
+  Min: -5
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &9113936457433098794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2253,3 +2332,23 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &9135834226317136806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SubEngine/PitchToHeight
+  m_EditorClassIdentifier: 
+  Name: PitchToHeight
+  Min: -5
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1

@@ -44,11 +44,11 @@ TagManager:
   - name: Background
     uniqueID: 3954411033
     locked: 0
-  - name: Submarine
-    uniqueID: 603165153
-    locked: 0
   - name: Menu
     uniqueID: 1550193461
+    locked: 0
+  - name: Submarine
+    uniqueID: 603165153
     locked: 0
   - name: Fish
     uniqueID: 1169335157

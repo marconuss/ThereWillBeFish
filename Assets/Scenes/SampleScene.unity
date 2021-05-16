@@ -130,14 +130,70 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1493928677, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651162768, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651162769, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_IsOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651162769, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651162769, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651162769, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6415094
+      objectReference: {fileID: 0}
     - target: {fileID: 1651162769, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 854303381}
-    - target: {fileID: 1928083166, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+    - target: {fileID: 1243583637384125238, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3669405627164561137, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714120716056697433, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_IsOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714120716056697433, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714120716056697433, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714120716056697433, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714120716056697433, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 854303381}
+    - target: {fileID: 3714120716056697433, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleSpeedControl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795292063201010132, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6089164747921850990, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
       propertyPath: m_Name
       value: Menu
@@ -190,14 +246,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 6089164748370550173, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1550193461
-      objectReference: {fileID: 0}
     - target: {fileID: 6089164749193193694, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
       propertyPath: myCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 6089164749193193694, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: speedControl
+      value: 
+      objectReference: {fileID: 580756254}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
 --- !u!1 &519420028
@@ -289,6 +345,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580756254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3714120716056697433, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+  m_PrefabInstance: {fileID: 507550050}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &854303381 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 907250280290944953, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
@@ -397,14 +464,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 907250280290944953, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
-      propertyPath: maxHorizontalSpeed
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 907250280290944953, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
-      propertyPath: minHorizontalSpeed
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 907250280290944956, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
       propertyPath: m_Name
       value: Submarine
@@ -451,10 +510,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 907250280290944959, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208814911237016738, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

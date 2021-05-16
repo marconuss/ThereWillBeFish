@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{48b56037-e73a-4e69-ba2a-49419bd41328}">
-		<property name="note" />
 		<property name="name">
 			<value>FishHit</value>
 		</property>
@@ -123,6 +122,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{f1dc197f-daa1-4718-b6cb-a6218d6820ef}">
+		<property name="volume">
+			<value>3</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{0f1b6319-7230-4ecb-aa0e-3e7622bc9685}</destination>
 		</relationship>

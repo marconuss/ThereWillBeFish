@@ -149,9 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19748c6394e229d4cb9542d954857559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableVerticalPitch: 0
   enableSpeedControl: 0
-  minHorizontalSpeed: 0.5
-  maxHorizontalSpeed: 2
+  minHorizontalSpeed: 0.7
+  maxHorizontalSpeed: 1.5
   horizontalAcceleration: 0.2
   maxVerticalMoveSpeed: 3
   minHeight: -4
@@ -336,7 +337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4208814911237016743}
   m_LocalRotation: {x: -0.51624817, y: -0.4832058, z: 0.4832058, w: 0.51624817}
-  m_LocalPosition: {x: -6.16, y: -0.85, z: -1}
+  m_LocalPosition: {x: -6.16, y: -0.85, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 907250280290944959}
