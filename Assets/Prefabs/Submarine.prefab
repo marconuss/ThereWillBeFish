@@ -154,6 +154,12 @@ MonoBehaviour:
   maxHorizontalSpeed: 2
   horizontalAcceleration: 0.2
   maxVerticalMoveSpeed: 3
+  minHeight: -4
+  maxHeight: 4
+  autoMoveMinDirectionChangeDelay: 1
+  autoMoveMaxDirectionChangeDelay: 4
+  autoMoveMinSteeringIntensity: 0.3
+  autoMoveMaxSteeringIntensity: 0.741
 --- !u!50 &907250280290944952
 Rigidbody2D:
   serializedVersion: 4

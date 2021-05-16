@@ -16,6 +16,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private Button pauseBtn;
     [SerializeField]
+    private Button autoMoveBtn;
+    [SerializeField]
     private RawImage title;
     [SerializeField]
     private Canvas myCanvas;    
@@ -76,12 +78,18 @@ public class MainMenu : MonoBehaviour
         startBtn.gameObject.SetActive(isPaused);
         exitBtn.gameObject.SetActive(isPaused);
         pauseBtn.gameObject.SetActive(!isPaused);
+        autoMoveBtn.gameObject.SetActive(!isPaused);
     }
 
     public void playPauseGame()
     {
         //inMenu = !inMenu;
         PauseManager.Instance.IsPaused = !PauseManager.Instance.IsPaused;
+    }
+
+    public void ToggleAutoPilot()
+    {
+        Submarine.Instance.IsAutoPilotEnabled = !Submarine.Instance.IsAutoPilotEnabled;
     }
 
     public void ExitGame()
