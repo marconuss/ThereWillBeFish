@@ -19,7 +19,7 @@ public class Metronome : Singleton<Metronome>
 
     private IEnumerator Beat()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSecondsRealtime(1f);
         while(true)
         {
             if (OnBeat != null)
@@ -27,7 +27,7 @@ public class Metronome : Singleton<Metronome>
                 OnBeat();
             }
             bpm = defaultBPM * Submarine.Instance.Velocity.x;
-            yield return new WaitForSeconds(60f / bpm);
+            yield return new WaitForSecondsRealtime(60f / bpm);
         }
     }
 }
