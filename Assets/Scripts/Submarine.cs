@@ -28,6 +28,8 @@ public class Submarine : Singleton<Submarine>
     [SerializeField] [Range(0f, 1f)]
     private float autoMoveMaxSteeringIntensity = 1f;
 
+    public bool enableVerticalPitch = false;
+
     private Vector2 velocity = new Vector2(1f, 0f);
     public Vector2 Velocity
     {
@@ -38,6 +40,10 @@ public class Submarine : Singleton<Submarine>
             if (enableSpeedControl)
             {
                 horizontalVelocity = Mathf.Clamp(value.x, minHorizontalSpeed, maxHorizontalSpeed);
+            }
+            else if(enableSpeedControl)
+            {
+                horizontalVelocity = 1f;
             }
             float verticalVelocity = Mathf.Clamp(value.y, -maxVerticalMoveSpeed, maxVerticalMoveSpeed);
             rb2D.velocity = new Vector2(rb2D.velocity.x, verticalVelocity);

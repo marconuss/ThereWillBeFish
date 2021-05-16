@@ -382,6 +382,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 907250280290944953, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
+      propertyPath: maxHorizontalSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 907250280290944953, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
+      propertyPath: minHorizontalSpeed
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 907250280290944956, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
       propertyPath: m_Name
       value: Submarine
@@ -486,6 +494,10 @@ PrefabInstance:
     - target: {fileID: 8060747277752120977, guid: 27576cc7c99ca1645a1ba26688093edd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060747277752120978, guid: 27576cc7c99ca1645a1ba26688093edd, type: 3}
+      propertyPath: fmodEvent
+      value: event:/Submarine/SubEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8060747277752120983, guid: 27576cc7c99ca1645a1ba26688093edd, type: 3}
       propertyPath: m_Name

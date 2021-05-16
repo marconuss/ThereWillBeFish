@@ -5,6 +5,7 @@ using UnityEngine;
 public class FMODEngine : MonoBehaviour
 {
     private FMOD.Studio.EventInstance eventInstance;
+    private FMOD.Studio.EventInstance eventInstance_2;
     [FMODUnity.EventRef]
     public string fmodEvent;
     [SerializeField]
@@ -21,6 +22,8 @@ public class FMODEngine : MonoBehaviour
     private void OnEnable()
     {
         Metronome.Instance.OnBeat += PlayEngineBeat;
+        eventInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
+        eventInstance_2 = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
     }
 
     private void OnDisable()
@@ -34,10 +37,30 @@ public class FMODEngine : MonoBehaviour
         beatsSinceLastPlay++;
         if (beatsSinceLastPlay >= clipLengthInBeats)
         {
-            eventInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
-            eventInstance.start();
+            //eventInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
+            //eventInstance.start();
             beatsSinceLastPlay = 0;
         }
+        if (beatsSinceLastPlay % 2 == 0)
+        {
+            PlayEngineInstance(eventInstance);
+
+        }
+        else
+        {
+            PlayEngineInstance(eventInstance_2);
+        }
+    }
+
+    private void PlayEngineInstance(FMOD.Studio.EventInstance ei)
+    {
+        ei.start();
+        ei.setParameterByName("EngineToVelocity", beatsSinceLastPlay);
+        if (Submarine.Instance.enableVerticalPitch)
+            ei.setParameterByName("PitchToHeight", Submarine.Instance.transform.position.y);
+        else
+            ei.setParameterByName("PitchToHeight", 0);
+        ei.release();
     }
 
 /*

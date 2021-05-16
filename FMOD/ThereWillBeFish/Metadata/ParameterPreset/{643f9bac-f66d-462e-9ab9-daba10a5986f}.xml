@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{643f9bac-f66d-462e-9ab9-daba10a5986f}">
+		<property name="name">
+			<value>EngineToVelocity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{876e832d-de2b-4ac1-9f5a-6887203c61b8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{22d85e11-0778-43d2-ac1b-ec363e7dc5a1}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{22d85e11-0778-43d2-ac1b-ec363e7dc5a1}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>8</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
