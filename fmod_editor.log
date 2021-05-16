@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000252AB9A3588 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000252216C06C8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,19 +20,22 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 176704
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10272
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F40427F0B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F404C7F068
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD71237B10
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD71237AE0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD71237BE0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD71237CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000252AB8964C8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002528CF7CA78
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cord Shell(222)', format=5, channels=2, frequency=48000, lengthbytes=41088, lengthpcm=164397, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.220230.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
@@ -42,14 +45,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 176704
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10272
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F40427F0B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F404C7F068
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD71237B10
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD71237AE0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD71237BE0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD71237CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000252AB8964C8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002528CF7CA78
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='A-note', format=5, channels=2, frequency=48000, lengthbytes=13216, lengthpcm=82198, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.104087.
@@ -58,14 +61,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 176704
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10272
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F40427F0B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F404C7F068
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD71237B10
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD71237AE0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD71237BE0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD71237CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000252AB8964C8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002528CF7CA78
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='G-note', format=5, channels=2, frequency=48000, lengthbytes=13120, lengthpcm=82198, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.069680.
@@ -74,14 +77,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 176704
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10272
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F40427F0B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F404C7F068
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD71237B10
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD71237AE0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD71237BE0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD71237CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000252AB8964C8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002528CF7CA78
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='C-note', format=5, channels=2, frequency=48000, lengthbytes=13504, lengthpcm=82198, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.102227.
@@ -90,14 +93,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 176704
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10272
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F40427F0B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F404C7F068
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD71237B10
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD71237AE0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD71237BE0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD71237CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000252AB8964C8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002528CF7CA78
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='D-note', format=5, channels=2, frequency=48000, lengthbytes=13248, lengthpcm=82198, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.058029.
@@ -106,14 +109,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 176704
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10272
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F40427F0B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F404C7F068
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD71237B10
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD71237AE0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD71237BE0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD71237CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000252AB8964C8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002528CF7CA78
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Ed-note', format=5, channels=2, frequency=48000, lengthbytes=13216, lengthpcm=82198, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.058002.
@@ -122,31 +125,47 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 176704
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 10272
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F40427F0B8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000F404C7F068
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFD71237B10
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFD71237AE0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFD71237BE0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFD71237CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000252AB8964C8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002528CF7CA78
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='E-note', format=5, channels=2, frequency=48000, lengthbytes=12896, lengthpcm=82198, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.058013.
-[LOG] SoundI::release                          :  (00000252250B7198)
-[LOG] SoundI::release                          :     G-note (00000252ABDD47D8)
-[LOG] SoundI::release                          :  (00000252250B6058)
-[LOG] SoundI::release                          :     D-note (0000025287823338)
-[LOG] SoundI::release                          :  (00000252250B75E8)
-[LOG] SoundI::release                          :     E-note (00000252878241D8)
-[LOG] SoundI::release                          :  (00000252250B61C8)
-[LOG] SoundI::release                          :     Ed-note (0000025287824038)
-[LOG] SoundI::release                          :  (00000252250B5EE8)
-[LOG] SoundI::release                          :     C-note (0000025287823B58)
-[LOG] SoundI::release                          :  (00000252250B6EB8)
-[LOG] SoundI::release                          :     A-note (00000252ABDD4638)
-[LOG] SoundI::release                          :  (00000252250B6D48)
-[LOG] SoundI::release                          :     Cord Shell(222) (00000252ABDD5E98)
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[WRN] FMOD_OS_Net_Listen                       : Cannot listen for connections, port 9264 is currently in use.
+[LOG] SoundI::release                          :  (00000252AB79C6C8)
+[LOG] SoundI::release                          :     G-note (000002521F8636F8)
+[LOG] SoundI::release                          :  (00000252AB79FED8)
+[LOG] SoundI::release                          :     D-note (000002521F863BD8)
+[LOG] SoundI::release                          :  (00000252AB7A25A8)
+[LOG] SoundI::release                          :     E-note (000002521F865918)
+[LOG] SoundI::release                          :  (00000252AB7A22C8)
+[LOG] SoundI::release                          :     Ed-note (000002521F8655D8)
+[LOG] SoundI::release                          :  (00000252AB79EC28)
+[LOG] SoundI::release                          :     C-note (000002521F863898)
+[LOG] SoundI::release                          :  (00000252AB79DAE8)
+[LOG] SoundI::release                          :     A-note (000002521F863078)
+[LOG] SoundI::release                          :  (00000252AB7A29F8)
+[LOG] SoundI::release                          :     Cord Shell(222) (000002521F866E38)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -156,11 +175,4 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
