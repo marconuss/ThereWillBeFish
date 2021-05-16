@@ -17,7 +17,7 @@ public class Fish : MonoBehaviour
     private string hitFishEvent;
 
     private FMOD.Studio.EventInstance hitFishEventInstance;
-    private bool hitNextBeat = false;
+    private bool wasHit = false;
 
     private void OnEnable()
     {
@@ -27,24 +27,25 @@ public class Fish : MonoBehaviour
     private void OnDisable()
     {
         if (Metronome.Instance)
-        {
             Metronome.Instance.OnBeat -= OnBeat;
-        }
     }
 
     private void Update()
     {
-        float moveSpeed = speed * Submarine.Instance.Velocity.x;
-        transform.position += Vector3.left * moveSpeed * Time.deltaTime;
-        if (transform.position.x < destroyXCoord)
+        if (!PauseManager.Instance.IsPaused)
         {
-            Destroy(gameObject);
+            float moveSpeed = speed * Submarine.Instance.Velocity.x;
+            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+            if (transform.position.x < destroyXCoord)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
     private void OnBeat()
     {
-        if (hitNextBeat)
+        if (wasHit)
         {
             hitFishEventInstance = FMODUnity.RuntimeManager.CreateInstance(hitFishEvent);
             hitFishEventInstance.start();
@@ -56,6 +57,6 @@ public class Fish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        hitNextBeat = true;
+        wasHit = true;
     }
 }

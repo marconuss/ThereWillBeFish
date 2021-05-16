@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 435668364, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 521a923008d8bc745a56b346e8756bb1, type: 3}
     - target: {fileID: 6089164747921850990, guid: 4116bf655c290d84cad40d9d63bfe693, type: 3}
       propertyPath: m_Name
       value: Menu

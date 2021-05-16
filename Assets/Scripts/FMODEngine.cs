@@ -18,9 +18,15 @@ public class FMODEngine : MonoBehaviour
     
     private int beatsSinceLastPlay = 69420;
 
-    private void Start()
+    private void OnEnable()
     {
         Metronome.Instance.OnBeat += PlayEngineBeat;
+    }
+
+    private void OnDisable()
+    {
+        if (Metronome.Instance)
+            Metronome.Instance.OnBeat -= PlayEngineBeat;
     }
 
     private void PlayEngineBeat()
