@@ -149,11 +149,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19748c6394e229d4cb9542d954857559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableSpeedControl: 0
   minHorizontalSpeed: 0.5
   maxHorizontalSpeed: 2
   horizontalAcceleration: 0.2
   maxVerticalMoveSpeed: 3
-  velocity: {x: 1, y: 0}
 --- !u!50 &907250280290944952
 Rigidbody2D:
   serializedVersion: 4
@@ -162,7 +162,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907250280290944956}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

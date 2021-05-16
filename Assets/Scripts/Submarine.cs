@@ -15,6 +15,10 @@ public class Submarine : Singleton<Submarine>
     private float horizontalAcceleration = .2f;
     [SerializeField]
     private float maxVerticalMoveSpeed = 3f;
+    [SerializeField]
+    private float minHeight = -4f;
+    [SerializeField]
+    private float maxHeight = 4f;
 
     private Vector2 velocity = new Vector2(1f, 0f);
     public Vector2 Velocity
@@ -28,6 +32,12 @@ public class Submarine : Singleton<Submarine>
                 horizontalVelocity = Mathf.Clamp(value.x, minHorizontalSpeed, maxHorizontalSpeed);
             }
             float verticalVelocity = Mathf.Clamp(value.y, -maxVerticalMoveSpeed, maxVerticalMoveSpeed);
+            bool goingBelowMinHeight = (transform.position.y <= minHeight) && (verticalVelocity < 0f);
+            bool goingAboveMaxHeight = (transform.position.y >= maxHeight) && (verticalVelocity > 0f);
+            if (goingBelowMinHeight || goingAboveMaxHeight)
+            {
+                verticalVelocity = 0f;
+            }
             rb2D.velocity = new Vector2(rb2D.velocity.x, verticalVelocity);
             velocity = new Vector2(horizontalVelocity, verticalVelocity);
         }

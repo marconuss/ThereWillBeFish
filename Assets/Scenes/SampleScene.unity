@@ -382,10 +382,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 907250280290944952, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 907250280290944956, guid: f9de3767857cb40e98fef484c3b5a1b7, type: 3}
       propertyPath: m_Name
       value: Submarine
