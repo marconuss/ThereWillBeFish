@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f52cea40b8a304ca7664f1663cc45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultBPM: 140
+  defaultBPM: 140.18692
 --- !u!4 &1553268736
 Transform:
   m_ObjectHideFlags: 0

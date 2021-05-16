@@ -61,7 +61,7 @@ public class Submarine : Singleton<Submarine>
         }
     }
 
-    void Start()
+    void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
     }
@@ -92,6 +92,9 @@ public class Submarine : Singleton<Submarine>
             if (inputDirection != Vector2.zero)
             {
                 IsAutoPilotEnabled = false;
+            }
+            if (!isAutoPilotEnabled)
+            {
                 float xVel = Velocity.x + inputDirection.x * horizontalAcceleration * Time.fixedDeltaTime;
                 float yVel = inputDirection.y * maxVerticalMoveSpeed;
                 Velocity = new Vector2(xVel, yVel);

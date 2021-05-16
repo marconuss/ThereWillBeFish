@@ -40,7 +40,6 @@ public class MainMenu : MonoBehaviour
     private void OnEnable()
     {
         PauseManager.Instance.OnPause += OnPause;
-        PauseManager.Instance.IsPaused = true;
     }
 
     private void OnDisable()
@@ -52,6 +51,7 @@ public class MainMenu : MonoBehaviour
     {
         myCamera.orthographicSize = 2.5f;
         myCamera.transform.position =  new Vector3(Submarine.Instance.transform.position.x, Submarine.Instance.transform.position.y, -1.0f);
+        PauseManager.Instance.IsPaused = true;
     }
 
     private void Update()
