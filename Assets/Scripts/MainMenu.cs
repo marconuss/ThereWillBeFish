@@ -20,6 +20,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private RawImage title;
     [SerializeField]
+    private Toggle pitchControl;
+    [SerializeField]
+    private Toggle speedControl;
+    [SerializeField]
     private Canvas myCanvas;    
 
     public static bool inMenu;
@@ -77,6 +81,8 @@ public class MainMenu : MonoBehaviour
         title.gameObject.SetActive(isPaused);
         startBtn.gameObject.SetActive(isPaused);
         exitBtn.gameObject.SetActive(isPaused);
+        speedControl.gameObject.SetActive(isPaused);
+        pitchControl.gameObject.SetActive(isPaused);
         pauseBtn.gameObject.SetActive(!isPaused);
         autoMoveBtn.gameObject.SetActive(!isPaused);
     }

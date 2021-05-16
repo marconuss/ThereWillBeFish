@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Submarine : Singleton<Submarine>
 {
+    public bool enableVerticalPitch = false;
+
     [SerializeField]
     private bool enableSpeedControl = false;
     [SerializeField]
@@ -28,7 +30,6 @@ public class Submarine : Singleton<Submarine>
     [SerializeField] [Range(0f, 1f)]
     private float autoMoveMaxSteeringIntensity = 1f;
 
-    public bool enableVerticalPitch = false;
 
     private Vector2 velocity = new Vector2(1f, 0f);
     public Vector2 Velocity
@@ -40,10 +41,6 @@ public class Submarine : Singleton<Submarine>
             if (enableSpeedControl)
             {
                 horizontalVelocity = Mathf.Clamp(value.x, minHorizontalSpeed, maxHorizontalSpeed);
-            }
-            else if(enableSpeedControl)
-            {
-                horizontalVelocity = 1f;
             }
             float verticalVelocity = Mathf.Clamp(value.y, -maxVerticalMoveSpeed, maxVerticalMoveSpeed);
             rb2D.velocity = new Vector2(rb2D.velocity.x, verticalVelocity);
@@ -76,7 +73,7 @@ public class Submarine : Singleton<Submarine>
     {
         PauseManager.Instance.OnPause += OnPause;
     }
-
+    
     private void OnDisable()
     {
         if (PauseManager.Instance)
@@ -87,7 +84,7 @@ public class Submarine : Singleton<Submarine>
 
     private void OnPause(bool isPaused)
     {
-        Velocity = Vector2.zero;
+        Velocity = new Vector2(1f, 0f);
     }
 
     private void FixedUpdate()
@@ -193,5 +190,14 @@ public class Submarine : Singleton<Submarine>
             yield return new WaitForSeconds(timeUntilDirectionChange);
         }
         IsAutoPilotEnabled = false;
+    }
+
+    public void ToggleVericalPitch()
+    {
+        enableVerticalPitch = !enableVerticalPitch;
+    }
+    public void ToggleSpeedControl()
+    {
+        enableSpeedControl = !enableSpeedControl;
     }
 }
