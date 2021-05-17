@@ -50,6 +50,11 @@ public class Fish : MonoBehaviour
             hitFishEventInstance = FMODUnity.RuntimeManager.CreateInstance(hitFishEvent);
             hitFishEventInstance.start();
             hitFishEventInstance.setParameterByName("FishHitHeight", transform.position.y);
+            if(Submarine.Instance.enableVerticalPitch)
+                hitFishEventInstance.setParameterByName("PitchToHeight", Submarine.Instance.transform.position.y);
+            else
+                hitFishEventInstance.setParameterByName("PitchToHeight", 0f);
+            hitFishEventInstance.release();
             Instantiate(bubbles, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
